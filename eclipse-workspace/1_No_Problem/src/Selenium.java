@@ -10,7 +10,9 @@ public class Selenium {
 		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.phptravels.net");
-		driver.findElement(By.className("select2-search__field")).sendKeys("Johor Bahru");
+		driver.findElement(By.xpath("//a[@class=' waves-effect'][3]")).click();
+		
+		
 		
 		
 		
