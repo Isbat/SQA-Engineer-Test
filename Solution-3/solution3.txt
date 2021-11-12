@@ -1,0 +1,15 @@
+-- create a table
+CREATE TABLE Students (
+  ID INT PRIMARY KEY,
+  Name varchar(25) NOT NULL,
+  Marks INT NOT NULL
+);
+-- insert some values to the student table
+INSERT INTO Students VALUES (1, 'Ashley', 81);
+INSERT INTO Students VALUES (2, 'Samantha', 75);
+INSERT INTO Students VALUES (3, 'Julia', 76);
+INSERT INTO Students VALUES (4, 'Belvet', 84);
+-- fetch student table values
+SELECT * FROM students;
+-- given task
+Select name from Students where marks > 75 ORDER BY substr(name,-3) asc, id asc;
